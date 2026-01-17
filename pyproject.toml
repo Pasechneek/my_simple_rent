@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "my-simple-rent"
+version = "0.1.0"
+description = ""
+authors = ["Pasechneek <danil.merkurev@yandex.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+djangorestframework-jsonapi = "^8.1.0"
+markdown = "^3.10"
+django-filter = "^25.2"
+django = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
