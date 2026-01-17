@@ -1,0 +1,7 @@
+asgiref
+django
+djangorestframework
+djangorestframework-jsonapi
+inflection
+markdown
+sqlparse
