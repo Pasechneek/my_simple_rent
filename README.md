@@ -1,0 +1,6 @@
+
+
+Mandatory:
+python3.12-venv
+python3-django
+
