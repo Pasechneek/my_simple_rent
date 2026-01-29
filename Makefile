@@ -31,6 +31,7 @@ install:
 
 check:
 	python3.12 manage.py check
+
 mig2:
 	python3.12 -m poetry run python manage.py makemigrations
 	python3.12 -m poetry run python manage.py migrate

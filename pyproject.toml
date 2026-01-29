@@ -12,6 +12,7 @@ markdown = "^3.10"
 django-filter = "^25.2"
 django = "^6.0.1"
 python-dotenv = "^1.2.1"
+mysqlclient = "^2.2.7"
 
 
 [build-system]
