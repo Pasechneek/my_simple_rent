@@ -6,3 +6,4 @@ inflection
 markdown
 sqlparse
 python-dotenv
+pymysql
