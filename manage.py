@@ -6,6 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
+    sys.path.append("/home/me/myapps")
+
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_simple_rent.settings')
     try:
         from django.core.management import execute_from_command_line
