@@ -3,8 +3,8 @@ secret
 .env
 my_simple_rent/__pycache__/
 first_app/__pycache__/
-first_app/migrations/__pycache__/
+first_app/migrations/
 deploy.md
 .venv/
-Pipfile
+#Pipfile
 poetry.lock
