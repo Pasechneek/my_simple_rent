@@ -1,41 +1,40 @@
+# TEST
 
 env:
 	python3 -m venv .venv
 	@echo "Виртуальное окружение создано"
 	@echo "Используйте: source .venv/bin/activate"
 
-
 env2:
-	python3 -m venv env
-	@echo "Виртуальное окружение создано"
-	@echo "Используйте: source env/bin/activate"
-
-env3:
 	python -m venv djangoenv
-
-
-host-env:
-	/opt/python/python-3.10.1/bin/python -m venv djangoenv
-
-host-env2:
-	python3.12 -m venv env
-	@echo "Виртуальное окружение создано"
-	@echo "Используйте: source env/bin/activate"
-
-mig:
-	poetry run python manage.py makemigrations
-	poetry run python manage.py migrate
-
 
 
 pip:
 	pip install -r requirements.txt
 
+
+mig2:
+	python3.12 -m poetry run python manage.py makemigrations
+	python3.12 -m poetry run python manage.py migrate
+
+mig3:
+	python3.12 manage.py makemigrations
+	python3.12 -m poetry run python manage.py migrate
+
+mig:
+	python3 manage.py makemigrations
+	python3 manage.py migrate
+
+mig:
+	poetry run python manage.py makemigrations
+	poetry run python manage.py migrate
+
+mig4:
+	python3 -m django makemigrations
+	python3 -m django migrate
+
 pip2:
 	python3 -m pip install -r requirements.txt
-
-host-pip:
-	python3.12 -m pip install -r requirements.txt
 
 install:
 	poetry install
@@ -58,25 +57,6 @@ check2:
 check3:
 	python3 -m poetry run python manage.py check
 
-mig4:
-	python3 -m django makemigrations
-	python3 -m django migrate
-
-mig2:
-	python3.12 -m poetry run python manage.py makemigrations
-	python3.12 -m poetry run python manage.py migrate
-
-mig3:
-	python3.12 manage.py makemigrations
-	python3.12 -m poetry run python manage.py migrate
-
-mig:
-	python3 manage.py makemigrations
-	python3 manage.py migrate
-
-serv:
-	poetry run python manage.py runserver
-
 serv2:
 	python3.12 -m poetry run python manage.py runserver
 
@@ -85,3 +65,16 @@ penv:
 
 stat:
 	python3 my_simple_rent/manage.py collectstatic
+
+# HOST!
+
+host-env:
+	/opt/python/python-3.10.1/bin/python -m venv djangoenv
+
+host-env2:
+	python3.12 -m venv env
+	@echo "Виртуальное окружение создано"
+	@echo "Используйте: source env/bin/activate"
+
+host-pip:
+	python3.12 -m pip install -r requirements.txt

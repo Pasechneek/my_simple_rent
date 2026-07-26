@@ -1,10 +1,9 @@
 secret
-.idea
+.idea/
 .env
 my_simple_rent/__pycache__/
 first_app/__pycache__/
 first_app/migrations/
 deploy.md
 .venv/
-#Pipfile
-poetry.lock
+/.gigaide/gigaide.properties

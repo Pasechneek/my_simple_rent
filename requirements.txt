@@ -1,9 +1,0 @@
-asgiref
-django
-djangorestframework
-djangorestframework-jsonapi
-inflection
-markdown
-sqlparse
-python-dotenv
-mysqlclient>=2.2.1
