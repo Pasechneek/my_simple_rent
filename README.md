@@ -3,7 +3,7 @@
 # Запускать
 все команды внутри окружения через poetry run
 
-# Установка
+# Установка на хосте
 python3.12 -m venv .venv
 source .venv/bin/activate
 
@@ -14,9 +14,7 @@ poetry install
 poetry run python manage.py collectstatic
 poetry run python manage.py migrate
 
-
-poetry run python manage.py runserver 0.0.0.0:8000
-
+poetry run python manage.py runserver
 
 # проверяем версии
 ```python -m django --version```

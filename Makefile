@@ -1,12 +1,3 @@
-# LOCAL
-
-env:
-	python3 -m venv .venv
-	@echo "Виртуальное окружение создано"
-	@echo "Используйте: source .venv/bin/activate"
-
-
-
 # HOST
 host-env:
 	python3.12 -m venv .venv
@@ -16,6 +7,20 @@ host-env:
 host-poetry:
 	pip install poetry
 	poetry install
+
+
+
+
+#LOCAL
+
+env:
+	python3 -m venv .venv
+	@echo "Виртуальное окружение создано"
+	@echo "Используйте: source .venv/bin/activate"
+
+
+
+
 
 
 
