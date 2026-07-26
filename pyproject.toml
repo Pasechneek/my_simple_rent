@@ -6,7 +6,7 @@ authors = ["Pasechneek <danil.merkurev@yandex.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.12"
 django = "*"
 python-dotenv = "*"
 mysqlclient = ">=2.2.1"
