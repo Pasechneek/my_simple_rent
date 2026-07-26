@@ -1,23 +1,22 @@
 
 
 # Запускать
-все команды внутри окружения через ...
+все команды внутри окружения через poetry run
 
 # Установка
-```python3.10 -m pip install pipenv```
-
-```python3.10 -m pipenv --version```
-
-``` python3.10 -m pipenv install  ```
+python3.12 -m venv .venv
+source .venv/bin/activate
 
 
+pip install poetry
+poetry install
 
-``` python3.10 -m pipenv shell``` (активирует виртуальное окружение для командной строки)
+
 # проверяем версии
 ```python -m django --version```
 ```django-admin --version ```
 
-```python manage.py runserver 0.0.0.0:8000```
+```poert runpython manage.py runserver 0.0.0.0:8000```
 или
 ```python manage.py runserver my-simple-rent.ru:443```
 или

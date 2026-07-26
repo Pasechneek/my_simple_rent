@@ -1,9 +1,25 @@
-# TEST
+# LOCAL
 
 env:
 	python3 -m venv .venv
 	@echo "Виртуальное окружение создано"
 	@echo "Используйте: source .venv/bin/activate"
+
+
+
+# HOST
+host-env:
+	python3.12 -m venv .venv
+	@echo "Виртуальное окружение создано"
+	@echo "Используйте: source .venv/bin/activate"
+
+host-poetry:
+	pip install poetry
+	poetry install
+
+
+
+#OTHER
 
 env2:
 	python -m venv djangoenv
@@ -66,15 +82,5 @@ penv:
 stat:
 	python3 my_simple_rent/manage.py collectstatic
 
-# HOST!
-
 host-env:
 	/opt/python/python-3.10.1/bin/python -m venv djangoenv
-
-host-env2:
-	python3.12 -m venv env
-	@echo "Виртуальное окружение создано"
-	@echo "Используйте: source env/bin/activate"
-
-host-pip:
-	python3.12 -m pip install -r requirements.txt
