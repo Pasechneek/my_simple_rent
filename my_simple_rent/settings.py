@@ -11,8 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import pymysql, os
 from dotenv import load_dotenv
-import os
+
+
+pymysql.install_as_MySQLdb()
 
 load_dotenv()
 
@@ -88,7 +91,7 @@ DATABASES = {
         'HOST': os.getenv('MYSQL_HOST'),
         'PORT': '3306',  # стандартный порт MySQL
         'OPTIONS': {
-            'init_command': "SET NAMES 'utf8mb4'; SET sql_mode = 'STRICT_TRANS_TABLES'",
+            'init_command': "SET NAMES 'utf8mb4';",
             'charset': 'utf8mb4',
         },
     }
