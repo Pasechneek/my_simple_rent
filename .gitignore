@@ -7,3 +7,7 @@ first_app/migrations/
 deploy.md
 .venv/
 /.gigaide/gigaide.properties
+=
+__pycache__/
+my_simple_rent_old/
+static/
